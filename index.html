@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Aethel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Satoshi:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      /* Define theme colors as CSS variables */
+      :root {
+        --background: #f5f7fa;
+        --surface: rgba(255, 255, 255, 0.8);
+        --primary: #b5179e;
+        --secondary: #00b4d8;
+        --accent: #f7b801;
+        --text: #1b1030;
+        --border: rgba(200, 200, 220, 0.5);
+        --font-headings: 'Satoshi', 'Inter', sans-serif;
+        --font-body: 'Inter', sans-serif;
+      }
+      html.dark {
+        --background: #0a0512;
+        --surface: rgba(20, 15, 30, 0.7);
+        --primary: #e056fd;
+        --secondary: #00f2ea;
+        --accent: #fde856;
+        --text: #e8e0ff;
+        --border: rgba(100, 80, 150, 0.3);
+      }
+      body {
+        background-color: var(--background);
+        color: var(--text);
+        font-family: var(--font-body);
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: var(--font-headings);
+      }
+      /* Custom scrollbar for a more thematic feel */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: var(--border);
+        border-radius: 20px;
+        border: 3px solid transparent;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: var(--primary);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.25.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

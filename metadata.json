@@ -1,0 +1,7 @@
+{
+  "name": "Project Aethel: Aetheric Intelligence Suite",
+  "description": "A multi-persona AI environment for deep research, creative endeavor, and personal companionship. It adapts its interface and interaction model based on the user's chosen task, wrapped in a modern, 'Aetheric' UI.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
